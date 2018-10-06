@@ -5,22 +5,25 @@
      <form @submit.prevent="updateEmployee" class="col s12">
        <div class="row">
          <div class="input-field col s12">
-           <input type="text" v-model="employee_id" required disabled>
+          <input type="text" v-model="employee_id" required disabled>
          </div>
 
          <div class="input-field col s12">
-           <input type="text" v-model="name" required>
+          <input type="text" v-model="name" required>
          </div>
 
          <div class="input-field col s12">
-           <input type="text" v-model="dept" required>
+          <input type="text" v-model="dept" required>
          </div>
 
          <div class="input-field col s12">
-           <input type="text" v-model="position" required>
+          <input type="text" v-model="position" required>
          </div>
-         <button type="submit" class="btn">Save</button>
-         <router-link to="/" class="btn red">Cancel</router-link>
+
+         <div class="buttons">
+          <button type="submit" class="btn">Save</button>
+          <router-link to="/" class="btn red">Cancel</router-link>
+         </div>
        </div>
      </form>
    </div>
@@ -85,3 +88,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .buttons {
+    display: flex;
+  }
+</style>

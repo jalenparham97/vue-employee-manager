@@ -23,8 +23,11 @@
            <input type="text" v-model="position" required>
            <label>Position</label>
          </div>
-         <button type="submit" class="btn">ADD</button>
-         <router-link to="/" class="btn red">Cancel</router-link>
+
+         <div class="buttons">
+          <button type="submit" class="btn">ADD</button>
+          <router-link to="/" class="btn red">Cancel</router-link>
+         </div>
        </div>
      </form>
    </div>
@@ -58,4 +61,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .buttons {
+    display: flex;
+  }
+</style>
 

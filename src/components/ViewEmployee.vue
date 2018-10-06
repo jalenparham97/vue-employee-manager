@@ -8,8 +8,11 @@
       <li class="collection-item">Department: {{ dept }}</li>
       <li class="collection-item">Position: {{ position }}</li>
     </ul>
-    <router-link to="/" class="btn grey">Back</router-link>
-    <buttom @click="deleteEmployee" class="btn red">Delete</buttom>
+
+    <div class="buttons">
+      <router-link to="/" class="btn grey">Back</router-link>
+      <buttom @click="deleteEmployee" class="btn red">Delete</buttom>
+    </div>
 
     <div class="fixed-action-btn">
       <router-link :to="{name: 'EditEmployee', params: {employee_id: employee_id}}" class="btn-floating btn-large green">
@@ -72,3 +75,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .buttons {
+    display: flex;
+  }
+</style>
+

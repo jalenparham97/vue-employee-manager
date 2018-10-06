@@ -24,10 +24,8 @@
            <label>Position</label>
          </div>
 
-         <div class="buttons">
-          <button type="submit" class="btn">ADD</button>
-          <router-link to="/" class="btn red">Cancel</router-link>
-         </div>
+        <button type="submit" class="btn">ADD</button>
+        <router-link to="/" class="btn red">Cancel</router-link>
        </div>
      </form>
    </div>
@@ -63,8 +61,8 @@ export default {
 </script>
 
 <style scoped>
-  .buttons {
-    display: flex;
+  .btn {
+    margin-right: 10px;
   }
 </style>
 

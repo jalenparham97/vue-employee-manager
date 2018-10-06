@@ -19,11 +19,9 @@
          <div class="input-field col s12">
           <input type="text" v-model="position" required>
          </div>
-
-         <div class="buttons">
-          <button type="submit" class="btn">Save</button>
-          <router-link to="/" class="btn red">Cancel</router-link>
-         </div>
+         
+        <button type="submit" class="btn">Save</button>
+        <router-link to="/" class="btn red">Cancel</router-link>
        </div>
      </form>
    </div>
@@ -90,7 +88,7 @@ export default {
 </script>
 
 <style scoped>
-  .buttons {
-    display: flex;
+  .btn {
+    margin-right: 10px;
   }
 </style>
